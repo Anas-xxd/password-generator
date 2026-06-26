@@ -8,7 +8,7 @@ body {
     
 }
 
-.border{
+#border{
     margin: 0;
     width: 420px;
 }
@@ -20,7 +20,7 @@ h1{
     font-weight: 800;
 }
 
-.green{
+#green{
     color: #4ADF86;
 }
 
@@ -29,26 +29,95 @@ p{
     margin: 0px;
 }
 
-.horizontal-line {
+#horizontal-line {
   border-top: 2px solid #2F3E53;
   width: 100%;
   margin: 20px 0;
   
 }
 
-.gen-butn-box{
+#gen-btn-box{
     margin-top: 50px;
     margin-bottom: 35px;
 }
-.gen-butn{
+
+#gen-btn{
     background-color: #10B981;
     color: white;
     border: 0;
     border-radius: 5px;
     padding: 10px 15px;
+    cursor: pointer;
 }
 
-.boxes{
+#menu-btn{
+    background-color: #2F3E53;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#side-bar{
+    background-color: #1F2937;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    align-items: left;
+    transition: 0.3s;
+    color: white;
+    z-index: 10;
+}
+
+h2{    
+    color: #4ADF86;
+    font-weight: 800;
+}
+
+#side-bar.active{
+    left: 0;
+}
+
+#side-bar-items{
+    margin: 15px;
+}
+
+#side-bar-boxes{
+    margin-left: 15px;
+}
+
+input[type="checkbox"]{
+    accent-color: #4ADF86;
+    border: 0;
+    cursor: pointer;
+}
+
+#range{
+    margin-top: 10px;
+}
+
+#symbols{
+    margin-top: 10px;
+}
+
+#overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+    cursor: pointer;
+}
+
+#overlay.active{
+    display: block;
+}    
+
+#boxes{
     display: flex;
     justify-content:space-between;
 }
